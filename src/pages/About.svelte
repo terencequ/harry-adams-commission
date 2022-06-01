@@ -6,7 +6,7 @@
     const copypastaTheoreticalPhysics = "alcoholism";
     const copypastaViewer = "consumer";
     const copypastaRick = "Harry";
-    const copypastaPersonalPhilosophySource = "Narodnaya Volya literature";
+    const copypastaPersonalPhilosophySource = "being unoriginal";
     const copypastaLife = "LIFE";
     const copypastaCatchphrase = "I'll drink to that";
     const copypastaCrypticReference = "Jeremy 985's epic streams and videos";
