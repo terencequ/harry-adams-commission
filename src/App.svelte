@@ -92,4 +92,16 @@
       transform: scaleX(1);
     }
   }
+
+  /** MAIN */
+  .main {
+    margin: auto;
+    padding: $default-spacing * 5;
+    width: 600px;
+    max-width: 90%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: $emphasized-background-color;
+  }
 </style>

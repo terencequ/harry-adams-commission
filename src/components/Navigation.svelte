@@ -11,6 +11,12 @@
             <Link class="hover-effect" to="forum">FORUM</Link>
         </li>
         <li>
+            <Link class="hover-effect" to="compound-interest-calculator">COMPOUND INTEREST CALCULATOR</Link>
+        </li>
+        <li>
+            <Link class="hover-effect" to="harry-quest">HARRY QUEST</Link>
+        </li>
+        <li>
             <Link class="hover-effect" to="about">ABOUT</Link>
         </li>
     </ul>
