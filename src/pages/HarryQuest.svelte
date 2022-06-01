@@ -1,6 +1,17 @@
+<script>
+</script>
+
 <main>
     <h1>Harry Quest</h1>
-    <p>
-        Requested by Harry Adams, not implemented yet.
-    </p>
+    <canvas id="canvas" width="276" height="414"></canvas>
+    <script src="./games/harry-quest-game/game.js"></script>
 </main>
+
+<style>
+    #canvas {
+        background-color: #be8172;
+        border: 2px solid black;
+        display: block;
+        margin: auto;
+    }
+</style>
