@@ -1,6 +1,13 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <meta name="robots" content="noindex nofollow" />
+  <title>Harry Adams, Professional Whore</title>
+  <html lang="en"></html>
+</svelte:head>
+
 
 <script lang="ts">
   import harry1 from "./assets/harry1.jpg";
