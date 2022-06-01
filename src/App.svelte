@@ -1,31 +1,27 @@
-<svelte:head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-  <meta name="robots" content="noindex nofollow" />
-  <title>Harry Adams, Professional Whore</title>
-  <html lang="en"></html>
-</svelte:head>
 
 
 <script lang="ts">
-  import harry1 from "./assets/harry1.jpg";
-  import harry2 from "./assets/harry1.jpg";
+  import {Router} from "svelte-navigator";
+  import Navigation from "./components/Navigation.svelte"
+  import Routes from "./components/Routes.svelte";
 </script>
 
-<main>
-  <img class="defaultImage" src="{harry1}" alt="Harry 1"/>
-  <h1>Super Cheap Whoretos</h1>
-  <p class="subtitle">Harry Adams, Professional Whore</p>
-</main>
+<Router>
+  <Navigation/>
+  <Routes/>
+</Router>
 
 <!-- Global styling -->
-<style global>
+<style global lang="scss">
+  @import "spacing";
+  @import "color";
+
   /** MAIN LAYOUT */
   body {
-    padding: 20px;
     text-align: center;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
   }
 
   /** TYPOGRAPHY */
@@ -35,35 +31,65 @@
   h1 {
     font-size: 3em;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: $default-spacing * 4;
   }
   h2 {
     font-size: 2em;
     font-weight: normal;
-    margin-bottom: 10px;
+    margin-bottom: $default-spacing * 2;
   }
   h3 {
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: $default-spacing;
   }
   h4 {
     font-size: 1.2em;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: $default-spacing;
   }
   p {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.05em;
+    line-height: 1.5em;
   }
   .subtitle {
     font-size: 1.2em;
     font-weight: normal;
-    margin: 0;
   }
 
   /** IMAGES */
   .defaultImage {
-    width: 300px;
+    width: 250px;
   }
 
+  /** LINK HOVER */
+  a, a > span {
+    font-family: 'Comic Sans MS', sans-serif;
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      transition: transform .2s ease;
+    }
+  }
+
+  .hover-effect {
+    padding-top: $default-spacing;
+    padding-bottom: $default-spacing;
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: $text-color;
+      transform: scaleX(0);
+    }
+    &:hover:before {
+      transform: scaleX(1);
+    }
+  }
 </style>
