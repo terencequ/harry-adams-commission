@@ -4,7 +4,7 @@
 <main>
     <h1>Harry Quest</h1>
     <canvas id="canvas" width="276" height="414"></canvas>
-    <script type="text/javascript" src="./games/harry-quest-game/game.js" defer />
+    <script type="text/javascript" src="/games/harry-quest-game/game.js" defer />
 </main>
 
 <style>
